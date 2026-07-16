@@ -1,7 +1,7 @@
 Options -Indexes
 
 <IfModule mod_headers.c>
-  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; frame-src https://www.google.com https://maps.google.com; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-bsqzECz14lXGZybSX2y3cbwFtXH15WzXq4q2FyMhhbY='; connect-src 'self'; font-src 'self'; media-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; frame-src https://www.google.com https://maps.google.com; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-1WeX8bfr0k5ToxYtBZJGhdjwXAAzT7e4zAeBMW6zmBA='; connect-src 'self'; font-src 'self'; media-src 'self'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "DENY"
@@ -21,6 +21,8 @@ Options -Indexes
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
 </IfModule>
 
 ErrorDocument 404 /404.html

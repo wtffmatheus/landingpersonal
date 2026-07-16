@@ -166,3 +166,22 @@
   // 2. Meta Pixel: carregue apenas após consentimento.
   // Os eventos já preparados usam dataLayer e fbq quando essas funções existem.
 })();
+
+// Eventos adicionais da atualização com mídia real.
+(() => {
+  const sendEvent = (eventName, parameters = {}) => {
+    const cleanName = String(eventName).replace(/[^a-zA-Z0-9_]/g, '').slice(0, 60);
+    if (Array.isArray(window.dataLayer)) window.dataLayer.push({ event: cleanName, ...parameters });
+    if (typeof window.fbq === 'function') window.fbq('trackCustom', cleanName, parameters);
+  };
+
+  document.querySelectorAll('[data-event]:not(.js-whatsapp)').forEach((element) => {
+    element.addEventListener('click', () => sendEvent(element.getAttribute('data-event') || 'site_interaction'));
+  });
+
+  const video = document.querySelector('[data-explainer-video]');
+  if (video instanceof HTMLVideoElement) {
+    video.addEventListener('play', () => sendEvent('explainer_video_play'), { once: true });
+    video.addEventListener('ended', () => sendEvent('explainer_video_complete'), { once: true });
+  }
+})();

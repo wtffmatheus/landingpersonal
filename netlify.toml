@@ -4,7 +4,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; frame-src https://www.google.com https://maps.google.com; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-bsqzECz14lXGZybSX2y3cbwFtXH15WzXq4q2FyMhhbY='; connect-src 'self'; font-src 'self'; media-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; frame-src https://www.google.com https://maps.google.com; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-1WeX8bfr0k5ToxYtBZJGhdjwXAAzT7e4zAeBMW6zmBA='; connect-src 'self'; font-src 'self'; media-src 'self'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"

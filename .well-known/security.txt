@@ -1,5 +1,5 @@
 Contact: https://wa.me/5511991234513
 Expires: 2027-07-16T23:59:59.000Z
 Preferred-Languages: pt-BR, en
-Canonical: https://wtffmatheus.github.io/rvpersonal/.well-known/security.txt
-Policy: https://wtffmatheus.github.io/rvpersonal/SECURITY.md
+Canonical: https://wtffmatheus.github.io/landingpersonal/.well-known/security.txt
+Policy: https://wtffmatheus.github.io/landingpersonal/SECURITY.md
