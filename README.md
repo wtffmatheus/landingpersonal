@@ -40,7 +40,7 @@ Abra `http://localhost:8080`.
 1. Substitua os arquivos do repositório por este conteúdo.
 2. Faça commit e push para a branch `main`.
 3. Em **Settings → Pages**, selecione **Deploy from a branch**.
-4. Escolha `main` e a pasta `/ (root)`.
+4. Escolha `main` e a pasta `/root`.
 
 Observação: o GitHub Pages não aplica `_headers`, `netlify.toml`, `vercel.json` ou `.htaccess`. A CSP principal também foi incluída no HTML para manter uma proteção básica. Para cabeçalhos HTTP completos e proteção de infraestrutura, prefira Cloudflare Pages, Netlify ou Vercel.
 
