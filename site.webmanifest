@@ -1,0 +1,16 @@
+{
+  "name": "RV Fisiologia — Programa de 45 Dias",
+  "short_name": "RV Fisiologia",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#0b3740",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
