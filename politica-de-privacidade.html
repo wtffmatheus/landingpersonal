@@ -1,43 +1,10 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b3740">
-  <meta name="color-scheme" content="light">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self'; script-src 'none'; frame-src 'none';">
-  <title>Política de Privacidade | RV Fisiologia</title>
-  <meta name="description" content="Política de privacidade da landing page da RV Fisiologia.">
-  <link rel="icon" href="assets/img/logo-rv-oficial.ico" sizes="any">
-  <link rel="stylesheet" href="assets/css/rv-fisiologia-v5.css?v=20260906-1">
-</head>
-<body class="legal-page">
-  <header class="legal-header"><div class="container"><a class="brand" href="index.html"><img src="assets/img/logo-rv.png" alt="RV Fisiologia"><span><strong>Rosangela Varas</strong><small>Política de privacidade</small></span></a></div></header>
-  <main class="container legal-content">
-    <p class="eyebrow"><span></span> PRIVACIDADE</p>
-    <h1>Política de Privacidade</h1>
-    <p>Última atualização: 6 de setembro de 2026.</p>
-    <p>Esta política explica, de forma simples, como a landing page <strong>rvfisiologista.com.br</strong> trata informações fornecidas por visitantes. A área autenticada do RV App possui finalidade e operação próprias e pode apresentar informações adicionais de privacidade dentro do aplicativo.</p>
-
-    <h2>1. Dados informados voluntariamente</h2>
-    <p>O formulário da página é usado apenas para montar uma mensagem que será aberta no WhatsApp do visitante. O site não envia nem armazena o conteúdo do formulário em banco de dados antes desse redirecionamento.</p>
-
-    <h2>2. WhatsApp, Instagram e serviços externos</h2>
-    <p>Ao clicar em links para WhatsApp, Instagram ou Google Maps, você passa a utilizar serviços de terceiros, sujeitos às políticas de privacidade dessas plataformas.</p>
-
-    <h2>3. Mapa</h2>
-    <p>O mapa incorporado só é carregado quando o visitante escolhe a opção “Carregar mapa”. Isso evita o carregamento automático do conteúdo externo durante a visita inicial.</p>
-
-    <h2>4. Cookies e armazenamento</h2>
-    <p>Esta landing page não depende de cookies de publicidade para funcionar. O navegador ou serviços de terceiros acessados por links podem adotar seus próprios mecanismos de armazenamento.</p>
-
-    <h2>5. RV App</h2>
-    <p>O RV App é uma ferramenta separada utilizada no acompanhamento. Recursos autenticados, avaliações, treinos e futuras integrações com dispositivos podem exigir permissões e regras específicas, apresentadas no próprio aplicativo quando aplicáveis.</p>
-
-    <h2>6. Contato</h2>
-    <p>Para dúvidas sobre privacidade ou sobre o atendimento, utilize os canais informados na página principal.</p>
-
-    <p><a href="index.html">← Voltar para a página inicial</a></p>
-  </main>
-</body>
-</html>
+document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');
+const q=(s,c=document)=>c.querySelector(s),qa=(s,c=document)=>[...c.querySelectorAll(s)];
+const header=q('[data-header]');const menu=q('[data-menu]');const toggle=q('[data-menu-toggle]');
+const setMenu=(open)=>{if(!menu||!toggle)return;menu.classList.toggle('is-open',open);toggle.setAttribute('aria-expanded',String(open));document.body.classList.toggle('menu-open',open)};
+toggle?.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));qa('[data-menu] a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));window.addEventListener('scroll',()=>header?.classList.toggle('is-scrolled',window.scrollY>12),{passive:true});
+const reveals=qa('.reveal');if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -30px'});reveals.forEach(el=>io.observe(el))}else reveals.forEach(el=>el.classList.add('is-visible'));
+qa('[data-accordion] button').forEach(btn=>btn.addEventListener('click',()=>{const box=document.getElementById(btn.getAttribute('aria-controls'));const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));if(box)box.hidden=open}));
+const v=q('[data-video]'),vp=q('[data-video-play]');vp?.addEventListener('click',()=>{v?.play().catch(()=>{});vp.closest('.video-shell')?.classList.add('is-playing')});v?.addEventListener('play',()=>v.closest('.video-shell')?.classList.add('is-playing'));v?.addEventListener('pause',()=>{if(v.currentTime===0)v.closest('.video-shell')?.classList.remove('is-playing')});
+let mapLoaded=false;qa('[data-load-map]').forEach(btn=>btn.addEventListener('click',()=>{if(mapLoaded)return;const card=q('[data-map-container]');if(!card)return;const iframe=document.createElement('iframe');iframe.title='Mapa da RV Fisiologia em Atibaia';iframe.loading='lazy';iframe.referrerPolicy='no-referrer-when-downgrade';iframe.src='https://www.google.com/maps?q=Alameda%20Prof.%20Lucas%20Nogueira%20Garcez%201195%20Atibaia%20SP&output=embed';card.innerHTML='';card.appendChild(iframe);mapLoaded=true}));
+qa('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());

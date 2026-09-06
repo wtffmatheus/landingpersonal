@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rvfisiologista.com.br/sitemap.xml
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#020b16"><title>Página não encontrada | RV Fisiologia</title><link rel="icon" href="assets/img/logo-rv-oficial.ico" sizes="any"><link rel="stylesheet" href="assets/css/rv-dark-v6.css?v=20260906-1"></head><body class="error-page"><main class="error-wrap"><div><p class="eyebrow"><span></span> ERRO 404</p><h1>Esta página não existe.</h1><p>O endereço pode ter sido digitado incorretamente ou o conteúdo foi movido.</p><a class="button button--primary" href="index.html">Voltar para o início</a></div></main></body></html>
