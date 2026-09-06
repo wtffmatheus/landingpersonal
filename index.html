@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b3740">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#020b16">
+  <meta name="color-scheme" content="dark">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-src https://www.google.com https://maps.google.com; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; media-src 'self'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
 
@@ -23,9 +23,9 @@
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260906-1">
-  <link rel="stylesheet" href="assets/css/rv-app-landing.css?v=20260906-1">
-  <script src="assets/js/main.js?v=20260906-1" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260906-2">
+  <link rel="stylesheet" href="assets/css/rv-app-landing.css?v=20260906-2">
+  <script src="assets/js/main.js?v=20260906-2" defer></script>
 </head>
 <body class="app-landing">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -47,6 +47,7 @@
         <a href="#apple-watch">Apple Watch</a>
         <a href="#resultados">Resultados</a>
         <a href="#sobre">Sobre</a>
+        <a class="nav-app-link" href="https://app.rvfisiologista.com.br/" target="_blank" rel="noopener noreferrer">Acessar app ↗</a>
       </nav>
 
       <a class="button button--header js-whatsapp" data-event="header_whatsapp" href="https://wa.me/5511991234513?text=Ol%C3%A1%21%20Conheci%20a%20RV%20Fisiologia%20e%20o%20RV%20App%20pelo%20site.%20Gostaria%20de%20entender%20como%20funciona%20o%20acompanhamento." target="_blank" rel="noopener noreferrer">Quero conhecer</a>
@@ -60,9 +61,9 @@
 
       <div class="container app-hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow eyebrow--light"><span></span> Programa individual + RV App</p>
-          <h1 id="hero-title">Seu acompanhamento continua <em>dentro e fora do treino.</em></h1>
-          <p class="hero-lead">Avaliação, planejamento e treino personalizado conectados a uma plataforma própria para organizar a rotina, acompanhar a evolução e aproximar aluno e profissional.</p>
+          <p class="eyebrow eyebrow--light"><span></span> RV APP • PLATAFORMA PRÓPRIA</p>
+          <h1 id="hero-title">Acompanhamento que continua <em>depois do treino.</em></h1>
+          <p class="hero-lead">Treino, evolução e acompanhamento em uma plataforma própria da RV. O aluno sabe o que fazer; o profissional enxerga o que precisa acompanhar.</p>
 
           <div class="hero-actions">
             <a class="button button--primary js-whatsapp" data-event="hero_whatsapp" href="https://wa.me/5511991234513?text=Ol%C3%A1%21%20Quero%20entender%20como%20funciona%20o%20acompanhamento%20da%20RV%20Fisiologia%20com%20o%20RV%20App." target="_blank" rel="noopener noreferrer">
@@ -79,43 +80,74 @@
           </ul>
         </div>
 
-        <div class="app-hero-visual reveal" aria-label="Demonstração da área do aluno e do painel profissional do RV App">
-          <div class="device-stage">
-            <div class="phone phone--student" aria-label="Exemplo da área do aluno">
-              <div class="phone-speaker" aria-hidden="true"></div>
-              <div class="phone-screen">
-                <div class="mock-status"><span>9:41</span><span>● ● ▰</span></div>
-                <div class="mock-brand"><img src="assets/img/logo-rv-oficial.png" alt="RV" width="34" height="34"><span>Área do aluno</span></div>
-                <div class="mock-welcome"><small>Olá, Ana</small><strong>Seu plano, seu ritmo.</strong><span>Continue de onde parou.</span></div>
-                <div class="mock-progress">
-                  <div><span>Programa atual</span><strong>45 Dias</strong></div>
-                  <div class="progress-ring" aria-label="68 por cento"><span>68%</span></div>
+        <div class="app-hero-visual reveal" aria-label="Demonstração visual do RV App">
+          <div class="product-stage">
+            <div class="product-glow" aria-hidden="true"></div>
+
+            <div class="product-window">
+              <div class="product-window-top">
+                <div class="product-brand">
+                  <img src="assets/img/logo-rv-oficial.png" width="38" height="38" alt="RV Fisiologia">
+                  <div><strong>RV Fisiologia</strong><span>Área do aluno</span></div>
                 </div>
-                <div class="mock-card mock-card--accent"><span class="mock-icon">▶</span><div><small>Treino de hoje</small><strong>Treino B • Inferiores</strong><span>6 exercícios</span></div></div>
-                <div class="mock-grid">
-                  <div class="mock-mini"><span class="mock-icon">↗</span><strong>Progresso</strong><small>Acompanhe sua evolução</small></div>
-                  <div class="mock-mini"><span class="mock-icon">✓</span><strong>Avaliações</strong><small>Histórico organizado</small></div>
+                <div class="product-nav" aria-hidden="true"><span class="active">Início</span><span>Treinos</span><span>Progresso</span></div>
+                <div class="product-user" aria-hidden="true">AS</div>
+              </div>
+
+              <div class="product-window-body">
+                <section class="student-premium-hero">
+                  <div>
+                    <span class="product-eyebrow">SEU PROGRAMA</span>
+                    <h3>Olá, Ana.</h3>
+                    <p>Seu treino, sua evolução e seu acompanhamento em um só lugar.</p>
+                  </div>
+                  <div class="product-dial" aria-label="68 por cento concluído"><div><strong>68%</strong><span>concluído</span></div></div>
+                </section>
+
+                <div class="student-action-grid">
+                  <article class="student-action-card featured">
+                    <span class="product-icon">▶</span>
+                    <div><small>PRÓXIMA AÇÃO</small><strong>Treino B • Inferiores</strong><p>6 exercícios organizados no seu programa.</p></div>
+                    <b>→</b>
+                  </article>
+                  <article class="student-action-card">
+                    <span class="product-icon">↗</span>
+                    <div><small>PROGRESSO</small><strong>68% do programa</strong><p>17 de 25 etapas concluídas.</p></div>
+                    <b>→</b>
+                  </article>
+                  <article class="student-action-card">
+                    <span class="product-icon">✓</span>
+                    <div><small>AVALIAÇÕES</small><strong>Histórico organizado</strong><p>Informações reunidas no perfil.</p></div>
+                    <b>→</b>
+                  </article>
+                  <article class="student-action-card">
+                    <span class="product-icon">◫</span>
+                    <div><small>METODOLOGIA</small><strong>Programa 45 Dias</strong><p>Início em 02/09/2026.</p></div>
+                    <b>→</b>
+                  </article>
                 </div>
-                <div class="mock-bottom-nav"><span class="is-active">⌂<small>Início</small></span><span>◫<small>Treinos</small></span><span>▥<small>Progresso</small></span><span>•••<small>Mais</small></span></div>
               </div>
             </div>
 
-            <div class="phone phone--admin" aria-label="Exemplo do painel administrativo">
-              <div class="phone-speaker" aria-hidden="true"></div>
-              <div class="phone-screen">
-                <div class="mock-status"><span>9:41</span><span>● ● ▰</span></div>
-                <div class="mock-brand"><img src="assets/img/logo-rv-oficial.png" alt="RV" width="32" height="32"><span>Administração</span></div>
-                <div class="admin-title"><small>VISÃO GERAL</small><strong>Acompanhamento</strong><span>Informação útil para agir no momento certo.</span></div>
-                <div class="admin-metrics"><div><small>Alunos ativos</small><strong>24</strong></div><div><small>Adesão média</small><strong>86%</strong></div><div><small>Pendências</small><strong>3</strong></div><div><small>Programas</small><strong>5</strong></div></div>
-                <div class="admin-panel"><div class="admin-panel-title"><strong>Atividade recente</strong><span>Hoje</span></div><div class="activity"><b>M</b><p><strong>Mariana</strong><small>Concluiu Treino A</small></p><span>✓</span></div><div class="activity"><b>J</b><p><strong>João</strong><small>Avaliação atualizada</small></p><span>↗</span></div><div class="activity"><b>L</b><p><strong>Lucas</strong><small>Treino pendente</small></p><span>!</span></div></div>
-                <div class="mock-bottom-nav"><span class="is-active">▦<small>Painel</small></span><span>♙<small>Alunos</small></span><span>▤<small>Programas</small></span><span>•••<small>Mais</small></span></div>
+            <aside class="admin-product-card" aria-label="Resumo da área administrativa">
+              <div class="admin-product-head">
+                <div><span>PAINEL PROFISSIONAL</span><strong>Visão geral</strong></div>
+                <span class="status-dot">● ao vivo</span>
               </div>
-            </div>
+              <div class="admin-product-metrics">
+                <div><small>Alunos ativos</small><strong>24</strong></div>
+                <div><small>Adesão média</small><strong>86%</strong></div>
+                <div><small>Pendências</small><strong>3</strong></div>
+              </div>
+              <div class="admin-product-list">
+                <div><span class="avatar">M</span><p><strong>Mariana</strong><small>Concluiu Treino A</small></p><b>✓</b></div>
+                <div><span class="avatar">J</span><p><strong>João</strong><small>Avaliação atualizada</small></p><b>↗</b></div>
+                <div><span class="avatar">L</span><p><strong>Lucas</strong><small>Treino pendente</small></p><b>!</b></div>
+              </div>
+            </aside>
 
-            <div class="stage-badge stage-badge--top"><span>RV App</span><strong>Treino a distância próprio</strong></div>
-            <div class="stage-badge stage-badge--bottom"><span>Aluno + profissional</span><strong>O mesmo acompanhamento, duas visões.</strong></div>
+            <div class="product-caption"><span></span> Interface inspirada no sistema visual atual do RV App</div>
           </div>
-          <p class="visual-note">Telas ilustrativas baseadas na estrutura atual do RV App.</p>
         </div>
       </div>
 
