@@ -1,13 +1,13 @@
 {
-  "name": "RV Fisiologia — Acompanhamento e RV App",
+  "name": "RV Fisiologia — Rosangela Varas",
   "short_name": "RV Fisiologia",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#020b16",
-  "theme_color": "#020b16",
+  "background_color": "#f7f9f8",
+  "theme_color": "#07272e",
   "icons": [
     {
-      "src": "assets/img/favicon.svg",
+      "src": "assets/brand/rv-logo.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
