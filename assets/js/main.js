@@ -102,7 +102,7 @@
       if (firstInvalid instanceof HTMLElement) { firstInvalid.focus(); return; }
 
       const challengeText = challenge ? ` Minha maior dificuldade hoje é: ${challenge}.` : '';
-      const message = `Olá! Meu nome é ${name}. Conheci o Programa de 45 Dias pelo site. Meu principal objetivo é ${goal}.${challengeText} Gostaria de entender como funciona a avaliação inicial.`;
+      const message = `Olá! Meu nome é ${name}. Conheci a RV Fisiologia e o RV App pelo site. Meu principal objetivo é ${goal}.${challengeText} Gostaria de entender qual formato de acompanhamento faz sentido para mim.`;
       trackEvent('lead_form_whatsapp', { goal });
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     });

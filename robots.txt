@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wtffmatheus.github.io/landingpersonal/sitemap.xml
+Sitemap: https://rvfisiologista.com.br/sitemap.xml
